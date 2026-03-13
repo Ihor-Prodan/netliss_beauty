@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 import { motion } from "framer-motion";
 import { Zap, ShieldCheck } from "lucide-react";
 import styles from "./LaserSection.module.css";
@@ -14,7 +14,7 @@ const features: Feature[] = [
   { title: "Tattoo removal", desc: "Bezpečné a postupné odstránenie tetovania pomocou špičkovej technológie." }
 ];
 
-const LaserSection = forwardRef<HTMLElement>((props, ref) => (
+const LaserSection = forwardRef<HTMLElement>((_, ref) => ( 
   <section id="laser" className={styles.laserSection} ref={ref}>
     <div className={styles.backgroundBlobs}>
       <div className={styles.blobGold} />

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
 type Props = {
-  darkSectionRef: React.RefObject<HTMLElement>;
+  darkSectionRef: React.RefObject<HTMLElement | null>;
 };
 
 const Navbar: React.FC<Props> = ({ darkSectionRef }) => {
