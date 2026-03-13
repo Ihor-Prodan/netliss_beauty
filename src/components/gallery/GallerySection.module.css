@@ -1,0 +1,112 @@
+.gallerySection {
+  padding: 8rem 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.header h2 {
+  font-family: serif;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .header h2 {
+    font-size: 3.75rem;
+  }
+}
+
+.header p {
+  color: #888;
+  max-width: 24rem;
+}
+
+.viewAllButton {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--color-brand-olive);
+  transition: all 0.3s;
+}
+
+.viewAllButton svg {
+  margin-left: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.viewAllButton:hover svg {
+  transform: translateX(0.5rem);
+}
+
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .bentoGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+.gridItem {
+  border-radius: 2.5rem;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.gridItem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+
+.gridItem:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.2);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  padding: 2.5rem;
+  transition: opacity 0.3s;
+}
+
+.gridItem:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+  color: white;
+  font-family: serif;
+  font-size: 1.5rem;
+}

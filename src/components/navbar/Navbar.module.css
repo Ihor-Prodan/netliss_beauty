@@ -1,0 +1,86 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-family: serif;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  color: var(--color-brand-olive);
+}
+
+.logo span {
+  color: var(--color-brand-gold);
+  font-weight: 300;
+  font-style: italic;
+}
+
+.navLinks {
+  display: none;
+  gap: 2rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.navLinks a:hover {
+  color: var(--color-brand-gold);
+}
+
+.dark {
+  color: white;
+}
+
+.dark .logo {
+  color: white;
+}
+
+.dark .logo span {
+  color: var(--color-brand-gold);
+}
+
+.dark .navLinks a:hover {
+  color: var(--color-brand-gold);
+}
+
+@media (min-width: 768px) {
+  .navLinks {
+    display: flex;
+  }
+}
+
+.button {
+  background-color: var(--color-brand-olive);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  transition: all 0.3s;
+  box-shadow: 0 10px 15px rgba(90, 107, 36, 0.2);
+  outline: none;
+}
+
+.button:hover {
+  background-color: var(--color-brand-gold);
+}
