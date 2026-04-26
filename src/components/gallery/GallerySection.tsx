@@ -4,18 +4,18 @@ import styles from "./GallerySection.module.css";
 
 const images = [
   {
-    src: "/netliss_beauty/public/IMG_0375.webp",
+    src: "/public/IMG_0375.webp",
     overlay: "Hydratácia & Jas",
     span2: true
   },
   {
-    src: "/netliss_beauty/public/IMG_0383.webp"
+    src: "/public/IMG_0383.webp"
   },
   {
-    src: "/netliss_beauty/public/IMG_0380.webp"
+    src: "/public/IMG_0380.webp"
   },
   {
-    src: "/netliss_beauty/public/IMG_0377.webp"
+    src: "/public/IMG_0377.webp"
   }
 ];
 
