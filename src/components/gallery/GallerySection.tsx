@@ -4,18 +4,18 @@ import styles from "./GallerySection.module.css";
 
 const images = [
   {
-    src: "/IMG_0375.webp",
+    src: "IMG_0375.webp",
     overlay: "Hydratácia & Jas",
     span2: true
   },
   {
-    src: "/IMG_0383.webp"
+    src: "IMG_0383.webp"
   },
   {
-    src: "/IMG_0380.webp"
+    src: "IMG_0380.webp"
   },
   {
-    src: "/IMG_0377.webp"
+    src: "IMG_0377.webp"
   }
 ];
 

@@ -8,7 +8,7 @@ const About: React.FC = () => (
         <div className={styles.imageWrapper}>
           <div className={styles.imageBox}>
             <img
-              src="/IMG_0379.webp"
+              src="IMG_0379.webp"
               alt="Fotografia"
               referrerPolicy="no-referrer"
             />
