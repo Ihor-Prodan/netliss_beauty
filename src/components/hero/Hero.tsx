@@ -44,14 +44,14 @@ const Hero: React.FC = () => {
         <div className={styles.imageWrapper}>
           <motion.img
             style={{ y: y1 }}
-            src="/public/IMG_0381.webp"
+            src="/IMG_0381.webp"
             alt="Kozmetické ošetrenie"
             className={styles.mainImage}
             referrerPolicy="no-referrer"
           />
           <motion.img
             style={{ y: y2 }}
-            src="/public/IMG_0378.webp"
+            src="/IMG_0378.webp"
             alt="Detail pleti"
             className={styles.secondaryImage}
             referrerPolicy="no-referrer"

@@ -60,7 +60,7 @@ const LaserSection = forwardRef<HTMLElement>((_, ref) => (
         <div className={styles.imageWrapper}>
           <div className={styles.aspectBox}>
             <img
-              src="/public/IMG_0382.webp"
+              src="/IMG_0382.webp"
               alt="Laserové ošetrenie"
               referrerPolicy="no-referrer"
             />
