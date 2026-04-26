@@ -18,18 +18,19 @@ const Hero: React.FC = () => {
         >
           <div className={styles.badge}>
             <Sparkles size={14} className="text-brand-gold" />
-            <span>Kosmetológia & Laser Aesthetics</span>
+            <span>Laserová epilácia & starostlivosť o pokožku</span>
           </div>
 
           <h1 className={styles.heroTitle}>
-            Zdravá a <br />
-            <span>čistá</span> <br />
-            pleť
+            Zamatovo hladká <br />
+            <span>pokožka</span> <br />
+            bez chĺpkov
           </h1>
 
           <p className={styles.heroText}>
-            Vstúpte do sveta netliss beauty, kde sa veda stretáva s krásou. Ponúkame
-            špičkové laserové a prístrojové ošetrenia pre vašu krásu.
+            Doprajte si dlhodobo hladkú pokožku vďaka modernej laserovej
+            epilácii. Bez bolesti, bez podráždenia a bez kompromisov - výsledky,
+            ktoré vidíte aj cítite.
           </p>
 
           <div className={styles.buttonGroup}>
@@ -43,14 +44,14 @@ const Hero: React.FC = () => {
         <div className={styles.imageWrapper}>
           <motion.img
             style={{ y: y1 }}
-            src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=800"
+            src="/netliss_beauty/public/IMG_0381.webp"
             alt="Kozmetické ošetrenie"
             className={styles.mainImage}
             referrerPolicy="no-referrer"
           />
           <motion.img
             style={{ y: y2 }}
-            src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=600"
+            src="/netliss_beauty/public/IMG_0378.webp"
             alt="Detail pleti"
             className={styles.secondaryImage}
             referrerPolicy="no-referrer"

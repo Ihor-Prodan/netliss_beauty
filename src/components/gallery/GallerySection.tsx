@@ -4,18 +4,18 @@ import styles from "./GallerySection.module.css";
 
 const images = [
   {
-    src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=1000",
+    src: "/netliss_beauty/public/IMG_0375.webp",
     overlay: "Hydratácia & Jas",
     span2: true
   },
   {
-    src: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800"
+    src: "/netliss_beauty/public/IMG_0383.webp"
   },
   {
-    src: "https://images.unsplash.com/photo-1596755389378-c31d21fd1273?auto=format&fit=crop&q=80&w=600"
+    src: "/netliss_beauty/public/IMG_0380.webp"
   },
   {
-    src: "https://images.unsplash.com/photo-1612817288484-6f916006741a?auto=format&fit=crop&q=80&w=600"
+    src: "/netliss_beauty/public/IMG_0377.webp"
   }
 ];
 
@@ -25,7 +25,7 @@ const GallerySection: React.FC = () => (
       <div className={styles.header}>
         <div>
           <h2>Naša Práca</h2>
-          <p>Skutočné výsledky našich klientiek. Veríme v transparentnosť a prirodzený vzhľad.</p>
+          <p>Skutočné výsledky našich klientov. Veríme v transparentnosť a prirodzený vzhľad.</p>
         </div>
         <button className={styles.viewAllButton}>
           Celá galéria <ArrowRight />

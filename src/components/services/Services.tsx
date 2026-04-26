@@ -12,27 +12,27 @@ interface Service {
 
 const services: Service[] = [
   {
-    title: "Hĺbkové čistenie",
-    desc: "Maska a masáž celej tváre a dekoltu pre dokonalú regeneráciu a čistotu.",
-    price: "65€",
+    title: "Laserová epilácia – malé partie",
+    desc: "Efektívne odstránenie chĺpkov v citlivých oblastiach ako podpazušie, horná pera alebo línia bikín.",
+    price: "od 25€",
     icon: <Sparkles className="w-6 h-6" />
   },
   {
-    title: "Aknózna pleť",
-    desc: "Ošetrenie problematickej pleti s odbornou diagnostikou a poradenstvom.",
-    price: "75€",
+    title: "Laserová epilácia – veľké partie",
+    desc: "Dlhodobá hladkosť pre nohy, ruky alebo chrbát bez podráždenia a zarastania chĺpkov.",
+    price: "od 60€",
     icon: <Clock className="w-6 h-6" />
   },
   {
-    title: "Čistenie & Peeling",
-    desc: "Profesionálne čistenie a peeling pre žiarivý a zdravý vzhľad vašej pleti.",
-    price: "70€",
+    title: "Bikini & Intímna epilácia",
+    desc: "Bezpečné a diskrétne ošetrenie pre maximálny komfort a dokonale hladkú pokožku.",
+    price: "od 45€",
     icon: <Heart className="w-6 h-6" />
   },
   {
-    title: "Prístrojové ošetrenia",
-    desc: "Moderné technológie pre spevnenie, omladenie a hĺbkovú výživu pleti.",
-    price: "70€",
+    title: "Konzultácia & individuálny plán",
+    desc: "Odborné posúdenie typu pokožky a chĺpkov pre maximálnu účinnosť ošetrenia.",
+    price: "zdarma",
     icon: <CheckCircle2 className="w-6 h-6" />
   }
 ];
@@ -41,7 +41,7 @@ const Services: React.FC = () => (
   <section id="sluzby" className={styles.servicesSection}>
     <div className={styles.container}>
       <div className={styles.header}>
-        <h2>Naše Služby</h2>
+        <h2>Naše ošetrenia</h2>
         <div className={styles.cert}>
           <div className={styles.certIcon}>
             <Award size={20} />

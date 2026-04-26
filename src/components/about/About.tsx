@@ -8,40 +8,45 @@ const About: React.FC = () => (
         <div className={styles.imageWrapper}>
           <div className={styles.imageBox}>
             <img
-              src="https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&q=80&w=1000"
+              src="/netliss_beauty/public/IMG_0379.webp"
               alt="Fotografia"
               referrerPolicy="no-referrer"
             />
           </div>
           <div className={styles.experienceCard}>
-            <div className={styles.number}>10+</div>
-            <div className={styles.label}>Rokov skúseností</div>
+            <div className={styles.number}>1000+</div>
+            <div className={styles.label}>Spokojných klientov</div>
           </div>
         </div>
 
         <div className={styles.textWrapper}>
           <h2>
-            Váš relax, <br />
-            <span>naša vášeň</span>
+            Hladká pokožka <br />
+            <span>bez kompromisov</span>
           </h2>
 
           <div className={styles.textWrapper}>
             <p>
-              V salóne netliss beauty veríme, že krása nie je len o povrchu, ale o pocite sebavedomia a zdravia. Každé ošetrenie prispôsobujeme individuálnym potrebám vašej pleti.
+              V netliss beauty sa špecializujeme na modernú laserovú epiláciu,
+              ktorá prináša dlhodobé výsledky bez podráždenia a zarastania
+              chĺpkov. Každé ošetrenie prispôsobujeme individuálne podľa typu
+              pokožky a chĺpkov.
             </p>
             <p>
-              Naším cieľom je vytvoriť oázu pokoja v rušnom dni, kde si nielen oddýchnete, ale uvidíte aj reálne výsledky vďaka špičkovej technológii a odbornej diagnostike.
+              Pracujeme s overenými technológiami a kladieme dôraz na
+              bezpečnosť, komfort a viditeľné výsledky. Naším cieľom nie je len
+              ošetrenie, ale reálna zmena, ktorú pocítite aj uvidíte.
             </p>
           </div>
 
           <div className={styles.infoGrid}>
             <div>
-              <h4>Certifikáty</h4>
-              <p>Pravidelne sa vzdelávame u svetových lídrov v estetike.</p>
+              <h4>Technológia</h4>
+              <p>Moderné laserové zariadenia pre maximálnu účinnosť a bezpečnosť.</p>
             </div>
             <div>
-              <h4>Prístup</h4>
-              <p>Konzultácia a diagnostika pleti pred každým zákrokom.</p>
+              <h4>Individuálny prístup</h4>
+              <p>Konzultácia a nastavenie ošetrenia podľa vašich potrieb.</p>
             </div>
           </div>
         </div>
