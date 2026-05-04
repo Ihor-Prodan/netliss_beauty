@@ -34,10 +34,10 @@ const Hero: React.FC = () => {
           </p>
 
           <div className={styles.buttonGroup}>
-            <button className={styles.primaryButton}>
+            <a className={styles.primaryButton} href="#sluzby">
               Naše Služby <ChevronRight className="ml-2" />
-            </button>
-            <button className={styles.secondaryButton}>Pozrieť výsledky</button>
+            </a>
+            <a className={styles.secondaryButton} href="#galeria">Pozrieť výsledky</a>
           </div>
         </motion.div>
 

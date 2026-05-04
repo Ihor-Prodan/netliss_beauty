@@ -40,7 +40,14 @@ const Navbar: React.FC<Props> = ({ darkSectionRef }) => {
         <a href="#kontakt">Kontakt</a>
       </div>
 
-      <button className={styles.button}>Rezervovať</button>
+      <a
+        className={styles.button}
+        href="https://www.notino.sk/salony/oasis/?utm_source=salon_mkt&utm_medium=qr&utm_campaign=booking_promo&utm_content=92e6a588-c4e6-43f0-89a1-926d0d5c274c&fbclid=PAZnRzaARlplhleHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaek5mk9UyzM_8D4lXQCEcthHIcAWI-W49Q6D_7OOf9dUWzccz7mzAZFhlvrBQ_aem_oosoQWbHoJSTu7ben9OF7w"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Rezervovať
+      </a>
     </nav>
   );
 };

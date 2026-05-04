@@ -85,6 +85,11 @@
   border: 1px solid transparent;
   transition: all 0.3s;
   cursor: pointer;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .serviceCard:hover {
@@ -120,6 +125,8 @@
   font-size: 0.875rem;
   margin-bottom: 2rem;
   line-height: 1.5;
+
+  flex-grow: 1;
 }
 
 .serviceFooter {
@@ -141,4 +148,81 @@
 
 .serviceCard:hover .arrowButton {
   opacity: 1;
+}
+
+.sliderInner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .sliderInner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .sliderInner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  overflow-x: auto;
+  scrollbar-width: none;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .tab {
+    font-size: 0.7rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .tabs {
+    justify-content: start;
+    gap: 0.4rem;
+  }
+
+  .tab {
+    font-size: 0.5rem;
+    padding: 0.45rem 0.8rem;
+  }
+}
+
+.tab {
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: 1px solid rgba(var(--color-brand-olive-rgb), 0.15);
+  background: transparent;
+  transition: all 0.3s;
+  white-space: nowrap;
+}
+
+.tab:hover {
+  border-color: rgba(var(--color-brand-gold-rgb), 0.4);
+}
+
+.activeTab {
+  background: var(--color-brand-gold);
+  color: white;
+  border-color: var(--color-brand-gold);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transform: translateY(-1px);
 }
