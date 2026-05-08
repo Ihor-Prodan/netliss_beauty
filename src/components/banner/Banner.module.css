@@ -1,0 +1,159 @@
+.promoBanner {
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  margin-bottom: 1.2rem;
+  padding: 1.25rem 1.6rem;
+
+  border-radius: 1.8rem;
+
+  background: #fff;
+
+  border: 2px solid rgba(239, 68, 68, 0.22);
+
+  box-shadow:
+    0 12px 35px rgba(239, 68, 68, 0.08),
+    0 0 0 4px rgba(239, 68, 68, 0.04);
+
+  isolation: isolate;
+}
+
+.promoBanner::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(239, 68, 68, 0.14),
+      transparent 35%
+    );
+
+  z-index: 0;
+}
+
+.promoGlow {
+  position: absolute;
+  top: -50px;
+  right: -40px;
+
+  width: 180px;
+  height: 180px;
+
+  border-radius: 50%;
+
+  background: rgba(239, 68, 68, 0.18);
+  filter: blur(45px);
+
+  z-index: 0;
+}
+
+.promoContent {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+
+.promoBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0.55rem 0.95rem;
+
+  border-radius: 999px;
+
+  background: #ef4444;
+  color: white;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  box-shadow: 0 10px 20px rgba(239, 68, 68, 0.3);
+
+  white-space: nowrap;
+}
+
+.promoBanner h3 {
+  margin: 0;
+
+  font-family: serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  color: #991b1b;
+}
+
+.promoBanner p {
+  margin: 0;
+
+  color: #5f5f5f;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.promoFooter {
+  position: relative;
+  z-index: 2;
+}
+
+.promoNote {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 0.45rem 0.8rem;
+
+  border-radius: 999px;
+
+  background: rgba(239, 68, 68, 0.06);
+  border: 1px solid rgba(239, 68, 68, 0.12);
+
+  color: #b91c1c;
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .promoBanner {
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 1rem;
+    border-radius: 1.5rem;
+  }
+
+  .promoContent {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 0.75rem;
+  }
+
+  .promoBanner h3 {
+    font-size: 1.05rem;
+  }
+
+  .promoBanner p {
+    font-size: 0.88rem;
+  }
+
+  .promoNote {
+    font-size: 0.74rem;
+  }
+}

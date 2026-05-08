@@ -5,6 +5,7 @@ import { Award, ArrowRight } from "lucide-react";
 import styles from "./Services.module.css";
 import "swiper/css";
 import { services } from "./servicesMap";
+import { Banner } from "../banner/Banner";
 
 const Services: React.FC = () => {
   const [active, setActive] = useState(0);
@@ -24,6 +25,8 @@ const Services: React.FC = () => {
             <span className={styles.certText}>Certifikovaný salón</span>
           </div>
         </div>
+
+        <Banner />
 
         {/* TABS (CONTROL SWIPER) */}
         <div className={styles.tabs}>
@@ -47,6 +50,7 @@ const Services: React.FC = () => {
           onSlideChange={(s) => setActive(s.realIndex)}
           slidesPerView={1}
           loop={true}
+          spaceBetween={24}
           className={styles.swiper}
         >
           {services.map((category) => (
