@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://netliss-beauty.sk/sitemap.xml

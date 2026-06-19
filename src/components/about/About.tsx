@@ -9,7 +9,7 @@ const About: React.FC = () => (
           <div className={styles.imageBox}>
             <img
               src="IMG_0379.webp"
-              alt="Fotografia"
+              alt="Interiér salónu Netliss Beauty v Bratislave"
               referrerPolicy="no-referrer"
             />
           </div>

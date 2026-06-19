@@ -6,16 +6,20 @@ const images = [
   {
     src: "IMG_0375.webp",
     overlay: "Hydratácia & Jas",
+    alt: "Hydratovaná a rozjasnená pokožka po ošetrení v Netliss Beauty",
     span2: true
   },
   {
-    src: "IMG_0383.webp"
+    src: "IMG_0383.webp",
+    alt: "Výsledok laserovej epilácie - hladká pokožka"
   },
   {
-    src: "IMG_0380.webp"
+    src: "IMG_0380.webp",
+    alt: "Kozmetické ošetrenie pleti v salóne Netliss Beauty"
   },
   {
-    src: "IMG_0377.webp"
+    src: "IMG_0377.webp",
+    alt: "Starostlivosť o pokožku v salóne Netliss Beauty"
   }
 ];
 
@@ -42,7 +46,7 @@ const GallerySection: React.FC = () => (
               gridRow: img.span2 ? "span 2" : undefined
             }}
           >
-            <img src={img.src} referrerPolicy="no-referrer" alt={`Galeria ${i + 1}`} />
+            <img src={img.src} referrerPolicy="no-referrer" alt={img.alt} />
             {img.overlay && (
               <div className={styles.overlay}>
                 <span>{img.overlay}</span>
